@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Stackly Travel — Luxury Stays & Bespoke Worldwide Destinations</title>
+  <meta name="description" content="Discover handpicked luxury hotels, breathtaking destinations, and exclusive travel experiences worldwide with Stackly Travel. Best price guarantee and seamless booking.">
+  <meta name="theme-color" content="#eb030b">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Stackly Travel — Luxury Stays & Worldwide Destinations">
+  <meta property="og:description" content="Handpicked 5-star hotels, bespoke travel experiences, and transparent booking price estimation.">
+  <meta property="og:image" content="assets/hero/hero-bg.webp">
+
+  <!-- Favicon using Stackly Logo -->
+  <link rel="icon" type="image/webp" href="assets/stackly_logo_01.webp">
+
+  <!-- AOS (Animate On Scroll) Stylesheet -->
+  <link rel="stylesheet" href="css/aos.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       PREMIUM GATES OPENING PRELOADER
+       ========================================================================== -->
+  <div id="preloader" class="preloader-gates" aria-hidden="true">
+    <!-- Left Grand Gate -->
+    <div class="gate-panel gate-left">
+      <div class="gate-pattern"></div>
+      <div class="gate-bevel-edge"></div>
+    </div>
+    
+    <!-- Right Grand Gate -->
+    <div class="gate-panel gate-right">
+      <div class="gate-pattern"></div>
+      <div class="gate-bevel-edge"></div>
+    </div>
+
+    <!-- Center Emblem & Loading Counter -->
+    <div class="gate-center-emblem" id="gate-center-emblem">
+      <div class="gate-logo-wrapper">
+        <img src="assets/stackly_logo_01.webp" alt="Stackly Travel" class="gate-logo-img" width="180" height="50">
+        <div class="gate-logo-glow"></div>
+      </div>
+      <div class="gate-progress-container">
+        <div class="gate-progress-bar" id="gate-progress-bar"></div>
+      </div>
+      <div class="gate-status-row">
+        <span class="gate-status-text">UNVEILING LUXURY SANCTUARIES</span>
+        <span class="gate-percentage" id="gate-percentage">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 1: HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <!-- Logo -->
+      <a href="#home" class="header-logo-link" aria-label="Stackly Travel Homepage">
+        <img src="assets/stackly_logo_01.webp" alt="Stackly Travel Logo" class="header-logo-img" width="124" height="54">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" role="navigation" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#destinations" class="nav-link">Destination</a>
+        <a href="#hotels" class="nav-link">Hotels</a>
+        <a href="#why-us" class="nav-link">About Us</a>
+        <a href="#footer" class="nav-link">Contact Us</a>
+      </nav>
+
+      <!-- Header Action Elements -->
+      <div class="header-actions">
+        <!-- Auth Button / User Profile -->
+        <div class="nav-auth-container">
+          <button type="button" class="btn-primary-nav btn-open-auth">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Login</span>
+          </button>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button 
+          type="button" 
+          id="btn-hamburger" 
+          class="btn-hamburger" 
+          aria-label="Toggle Navigation Menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav-drawer"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer (Full-Width Luxury Sidebar) -->
+  <aside id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <img src="assets/stackly_logo_01.webp" alt="Stackly Travel" class="mobile-nav-logo" width="110" height="48">
+      <button type="button" id="btn-close-mobile-nav" class="btn-close-drawer" aria-label="Close Navigation Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-nav-body">
+      <nav class="mobile-nav-list" aria-label="Mobile Navigation Links">
+        <a href="#home" class="mobile-nav-link">
+          <span>Home</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#destinations" class="mobile-nav-link">
+          <span>Destination</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#hotels" class="mobile-nav-link">
+          <span>Hotels</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#why-us" class="mobile-nav-link">
+          <span>About Us</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+        <a href="#footer" class="mobile-nav-link">
+          <span>Contact Us</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+      </nav>
+      <div class="mobile-nav-footer">
+        <div class="nav-auth-container">
+          <button type="button" class="btn-primary-block btn-open-auth">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Login</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay"></div>
+
+  <main id="main-content">
+
+    <!-- ==========================================================================
+         SECTION 2: HERO SECTION & INTEGRATED BOOKING SEARCH
+         ========================================================================== -->
+    <section id="home" class="hero-section" aria-label="Welcome to Stackly Travel">
+      <!-- Hero 5-Image Continuous Background Slider (2s gap) -->
+      <div class="hero-bg-slider" id="hero-bg-slider" aria-hidden="true">
+        <div class="hero-bg-slide active" style="background-image: url('assets/hero/hero-bg-1.webp');"></div>
+        <div class="hero-bg-slide" style="background-image: url('assets/hero/hero-bg-2.webp');"></div>
+        <div class="hero-bg-slide" style="background-image: url('assets/hero/hero-bg-3.webp');"></div>
+        <div class="hero-bg-slide" style="background-image: url('assets/hero/hero-bg-4.webp');"></div>
+        <div class="hero-bg-slide" style="background-image: url('assets/hero/hero-bg-5.webp');"></div>
+        <div class="hero-bg-overlay"></div>
+      </div>
+
+      <!-- Hero Slide Dots Navigation -->
+      <div class="hero-slider-nav" id="hero-slider-nav" aria-label="Hero background controls">
+        <button type="button" class="hero-slide-dot active" data-index="0" aria-label="View Hero Slide 1" aria-current="true"></button>
+        <button type="button" class="hero-slide-dot" data-index="1" aria-label="View Hero Slide 2"></button>
+        <button type="button" class="hero-slide-dot" data-index="2" aria-label="View Hero Slide 3"></button>
+        <button type="button" class="hero-slide-dot" data-index="3" aria-label="View Hero Slide 4"></button>
+        <button type="button" class="hero-slide-dot" data-index="4" aria-label="View Hero Slide 5"></button>
+      </div>
+
+      <div class="container">
+        <div class="hero-content" data-aos="fade-up">
+          <div class="hero-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>Discover Unforgettable Luxury</span>
+          </div>
+          <h1 class="hero-headline">
+            Discover the World, <br>
+            <span class="highlight-white">One Journey</span> at a Time.
+          </h1>
+          <p class="hero-description">
+            Experience handpicked 5-star sanctuaries, transparent live pricing, and round-the-clock bespoke concierge support tailored for discerning travelers.
+          </p>
+          <div class="hero-ctas">
+            <a href="#destinations" class="btn-primary">
+              <span>Explore Destinations</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#why-us" class="btn-secondary">
+              <span>About Us</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Integrated Floating Destination Booking Search Panel -->
+        <div class="booking-search-panel-wrapper" data-aos="fade-up" data-aos-delay="150">
+          <div class="booking-search-panel">
+            <form id="hero-booking-form" class="booking-search-grid" onsubmit="event.preventDefault();">
+              
+              <!-- Destination Input with Autocomplete Suggestions -->
+              <div class="search-field-group">
+                <label for="search-destination" class="field-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Destination</span>
+                </label>
+                <input 
+                  type="text" 
+                  id="search-destination" 
+                  class="field-input" 
+                  placeholder="Where to? (e.g. Paris, Bali...)" 
+                  autocomplete="off"
+                >
+                <!-- Autocomplete Dropdown List -->
+                <div id="destination-suggestions" class="suggestions-dropdown" role="listbox"></div>
+              </div>
+
+              <!-- Check-In Date -->
+              <div class="search-field-group">
+                <label for="search-checkin" class="field-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>Check-in</span>
+                </label>
+                <input type="date" id="search-checkin" class="field-input">
+              </div>
+
+              <!-- Check-Out Date -->
+              <div class="search-field-group">
+                <label for="search-checkout" class="field-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>Check-out</span>
+                </label>
+                <input type="date" id="search-checkout" class="field-input">
+              </div>
+
+              <!-- Guests & Rooms Selector -->
+              <div class="search-field-group guests-dropdown-wrapper">
+                <span class="field-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span>Guests & Rooms</span>
+                </span>
+                <button type="button" id="guests-rooms-trigger" class="guests-trigger" aria-haspopup="true">
+                  <span id="guests-rooms-label" class="guests-summary-text">2 Guests, 1 Room</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+
+                <!-- Dropdown panel with increment / decrement controls -->
+                <div id="guests-rooms-dropdown" class="guests-rooms-panel">
+                  <div class="counter-row">
+                    <div class="counter-label-group">
+                      <span class="counter-title">Adults</span>
+                      <span class="counter-sub">Ages 13 and above</span>
+                    </div>
+                    <div class="counter-controls">
+                      <button type="button" class="btn-counter" data-target="adults" data-action="dec" aria-label="Decrease Adults">-</button>
+                      <span id="adults-count-val" class="counter-val">2</span>
+                      <button type="button" class="btn-counter" data-target="adults" data-action="inc" aria-label="Increase Adults">+</button>
+                    </div>
+                  </div>
+
+                  <div class="counter-row">
+                    <div class="counter-label-group">
+                      <span class="counter-title">Children</span>
+                      <span class="counter-sub">Ages 0 to 12</span>
+                    </div>
+                    <div class="counter-controls">
+                      <button type="button" class="btn-counter" data-target="children" data-action="dec" aria-label="Decrease Children">-</button>
+                      <span id="children-count-val" class="counter-val">0</span>
+                      <button type="button" class="btn-counter" data-target="children" data-action="inc" aria-label="Increase Children">+</button>
+                    </div>
+                  </div>
+
+                  <div class="counter-row">
+                    <div class="counter-label-group">
+                      <span class="counter-title">Rooms</span>
+                      <span class="counter-sub">Separate suites</span>
+                    </div>
+                    <div class="counter-controls">
+                      <button type="button" class="btn-counter" data-target="rooms" data-action="dec" aria-label="Decrease Rooms">-</button>
+                      <span id="rooms-count-val" class="counter-val">1</span>
+                      <button type="button" class="btn-counter" data-target="rooms" data-action="inc" aria-label="Increase Rooms">+</button>
+                    </div>
+                  </div>
+
+                  <button type="button" id="btn-apply-guests" class="btn-apply-guests">Done</button>
+                </div>
+              </div>
+
+              <!-- Search Hotels CTA -->
+              <button type="button" id="btn-hero-search" class="btn-search-hotels" aria-label="Search available hotels">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Search Hotels</span>
+              </button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: POPULAR DESTINATIONS
+         ========================================================================== -->
+    <section id="destinations" class="section" aria-label="Popular Worldwide Destinations">
+      <div class="container">
+        
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+            Iconic Getaways
+          </span>
+          <h2 class="section-title">Popular <span class="highlight">Destinations</span></h2>
+          <p class="section-subtitle">
+            Immerse yourself in world-renowned cities, tranquil tropical islands, and dramatic alpine landscapes handpicked for your next getaway.
+          </p>
+        </header>
+
+        <!-- Destination Filter & Search Controls -->
+        <div class="destinations-filter-bar" data-aos="fade-up">
+          <!-- Region Filter Pills -->
+          <div class="dest-pills-group" role="tablist" aria-label="Filter destinations by region">
+            <button type="button" class="dest-filter-btn active" data-region="all">All Destinations</button>
+            <button type="button" class="dest-filter-btn" data-region="europe">Europe</button>
+            <button type="button" class="dest-filter-btn" data-region="asia">Asia</button>
+            <button type="button" class="dest-filter-btn" data-region="americas">Americas</button>
+            <button type="button" class="dest-filter-btn" data-region="middle-east">Middle East</button>
+          </div>
+
+          <!-- Instant Destination Live Search -->
+          <div class="dest-search-box">
+            <span class="dest-search-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input 
+              type="text" 
+              id="destinations-search-input" 
+              class="dest-search-input" 
+              placeholder="Search by city or country..."
+              aria-label="Filter destinations by keyword"
+            >
+            <button type="button" id="destinations-clear-search" class="dest-clear-btn" aria-label="Clear search input">&times;</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Destination Cards Grid -->
+        <div id="destinations-grid" class="destinations-grid" aria-live="polite">
+          <!-- Populated dynamically via js/destinations.js -->
+        </div>
+
+        <!-- Destination Empty State -->
+        <div id="destinations-empty-state" class="empty-state-box hidden">
+          <div class="empty-state-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+          <h3 class="empty-state-title">No destinations match your search</h3>
+          <p class="empty-state-text">Try adjusting your keyword or region filter to view other extraordinary worldwide locations.</p>
+          <button type="button" class="btn-primary" onclick="resetDestinationFilters()">Reset All Filters</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: FEATURED HOTELS
+         ========================================================================== -->
+    <section id="hotels" class="section section-alt" aria-label="Featured Luxury Hotels">
+      <div class="container">
+
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 21h18"></path>
+              <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
+            </svg>
+            Five-Star Hospitality
+          </span>
+          <h2 class="section-title">Featured <span class="highlight">Luxury Hotels</span></h2>
+          <p class="section-subtitle">
+            Unwind in architectural masterpieces, cliffside villas, and serene ryokans vetted rigorously for exceptional comfort and flawless service.
+          </p>
+        </header>
+
+        <!-- Hotels Filter & Sorting Toolbar -->
+        <div class="hotels-filter-toolbar" data-aos="fade-up">
+          <div class="toolbar-header-row">
+            <div class="toolbar-title-group">
+              <h3 class="toolbar-title">Filter Accommodations</h3>
+              <span id="hotels-count-badge" class="properties-count-badge">12 Properties Found</span>
+            </div>
+            <div class="toolbar-actions-group">
+              <button type="button" id="hotels-reset-filters" class="btn-reset-filters">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="1 4 1 10 7 10"></polyline>
+                  <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                </svg>
+                <span>Reset Filters</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="toolbar-controls-grid">
+            <!-- Filter by Destination -->
+            <div class="filter-ctrl-item">
+              <label for="hotel-filter-destination" class="filter-ctrl-label">Destination</label>
+              <select id="hotel-filter-destination" class="filter-select">
+                <option value="all">All Destinations</option>
+                <option value="Paris">Paris, France</option>
+                <option value="Bali">Bali, Indonesia</option>
+                <option value="Santorini">Santorini, Greece</option>
+                <option value="Tokyo">Tokyo, Japan</option>
+                <option value="Swiss Alps">Swiss Alps, Switzerland</option>
+                <option value="New York">New York, USA</option>
+                <option value="Amalfi Coast">Amalfi Coast, Italy</option>
+                <option value="Dubai">Dubai, UAE</option>
+              </select>
+            </div>
+
+            <!-- Filter by Max Price Range -->
+            <div class="filter-ctrl-item">
+              <div class="filter-ctrl-label">
+                <span>Max Price Per Night</span>
+                <span id="hotel-price-val" class="filter-ctrl-val">$600</span>
+              </div>
+              <input 
+                type="range" 
+                id="hotel-filter-price" 
+                class="filter-range" 
+                min="150" 
+                max="600" 
+                step="25" 
+                value="600" 
+                aria-label="Filter maximum price per night"
+              >
+            </div>
+
+            <!-- Filter by Customer Rating -->
+            <div class="filter-ctrl-item">
+              <label for="hotel-filter-rating" class="filter-ctrl-label">Minimum Rating</label>
+              <select id="hotel-filter-rating" class="filter-select">
+                <option value="0">All Ratings</option>
+                <option value="4.8">4.8★ & Above (Exceptional)</option>
+                <option value="4.5">4.5★ & Above (Superb)</option>
+                <option value="4.0">4.0★ & Above (Very Good)</option>
+              </select>
+            </div>
+
+            <!-- Sort By -->
+            <div class="filter-ctrl-item">
+              <label for="hotel-sort-by" class="filter-ctrl-label">Sort By</label>
+              <select id="hotel-sort-by" class="filter-select">
+                <option value="popular">Most Popular</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating-desc">Guest Rating: Highest First</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Hotel Cards Grid -->
+        <div id="hotels-grid" class="hotels-grid" aria-live="polite">
+          <!-- Populated dynamically via js/hotels.js -->
+        </div>
+
+        <!-- Hotel Empty State -->
+        <div id="hotels-empty-state" class="empty-state-box hidden">
+          <div class="empty-state-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 21h18"></path>
+              <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16"></path>
+            </svg>
+          </div>
+          <h3 class="empty-state-title">No hotels match your current filters</h3>
+          <p class="empty-state-text">Try raising your price threshold or selecting "All Destinations" to view other available five-star stays.</p>
+          <button type="button" id="hotels-empty-reset-btn" class="btn-primary">Reset Hotel Filters</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: SPECIAL OFFERS
+         ========================================================================== -->
+    <section id="offers" class="section" aria-label="Limited Time Special Offers">
+      <div class="container">
+
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="19" y1="5" x2="5" y2="19"></line>
+              <circle cx="6.5" cy="6.5" r="2.5"></circle>
+              <circle cx="17.5" cy="17.5" r="2.5"></circle>
+            </svg>
+            Exclusive Savings
+          </span>
+          <h2 class="section-title">Special Travel <span class="highlight">Offers</span></h2>
+          <p class="section-subtitle">
+            Unlock significant seasonal savings on luxury resort stays. Copy promo codes directly to your clipboard for instant checkout deductions.
+          </p>
+        </header>
+
+        <div class="offers-grid" id="offers-grid">
+
+          <!-- Offer 1: Left Card (Comes from Left Side) -->
+          <article class="offer-card offer-card-left">
+            <div class="offer-image-box">
+              <img src="assets/offers/offer-1.webp" alt="Tropical Early Bird Escape" class="offer-img" loading="lazy" width="800" height="500">
+              <span class="offer-discount-badge">30% OFF</span>
+              <span class="offer-validity">Valid until Dec 31</span>
+            </div>
+            <div class="offer-content">
+              <h3 class="offer-title">Tropical Early Bird Escape</h3>
+              <p class="offer-desc">Book your Bali or Santorini private pool villa at least 30 days in advance and receive 30% off your entire stay plus complimentary champagne.</p>
+              <div class="offer-coupon-box">
+                <div class="coupon-details">
+                  <span class="coupon-label">Coupon Code</span>
+                  <span class="coupon-code">STACKSUMMER30</span>
+                </div>
+                <button type="button" class="btn-copy-coupon" data-coupon="STACKSUMMER30" aria-label="Copy promo code STACKSUMMER30">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copy Code</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Offer 2: Center Card (Comes from Downside / Bottom) -->
+          <article class="offer-card offer-card-center">
+            <div class="offer-image-box">
+              <img src="assets/offers/offer-2.webp" alt="Presidential Suite Voucher" class="offer-img" loading="lazy" width="800" height="500">
+              <span class="offer-discount-badge">SAVE $150</span>
+              <span class="offer-validity">Limited Availability</span>
+            </div>
+            <div class="offer-content">
+              <h3 class="offer-title">Presidential Suite Voucher</h3>
+              <p class="offer-desc">Enjoy an instant $150 deduction on any 3+ night booking in our curated luxury suites collection in Paris, Dubai, or New York.</p>
+              <div class="offer-coupon-box">
+                <div class="coupon-details">
+                  <span class="coupon-label">Coupon Code</span>
+                  <span class="coupon-code">LUXURY150VIP</span>
+                </div>
+                <button type="button" class="btn-copy-coupon" data-coupon="LUXURY150VIP" aria-label="Copy promo code LUXURY150VIP">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copy Code</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Offer 3: Right Card (Comes from Right Side) -->
+          <article class="offer-card offer-card-right">
+            <div class="offer-image-box">
+              <img src="assets/offers/offer-3.webp" alt="Weekend City Flash Sale" class="offer-img" loading="lazy" width="800" height="500">
+              <span class="offer-discount-badge">20% OFF</span>
+              <span class="offer-validity">Weekend Stays</span>
+            </div>
+            <div class="offer-content">
+              <h3 class="offer-title">Weekend City Flash Sale</h3>
+              <p class="offer-desc">Spontaneous weekend break? Save 20% on boutique luxury stays checking in on Friday or Saturday with complimentary late checkout until 3 PM.</p>
+              <div class="offer-coupon-box">
+                <div class="coupon-details">
+                  <span class="coupon-label">Coupon Code</span>
+                  <span class="coupon-code">WEEKEND20NOW</span>
+                </div>
+                <button type="button" class="btn-copy-coupon" data-coupon="WEEKEND20NOW" aria-label="Copy promo code WEEKEND20NOW">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span>Copy Code</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: WHY CHOOSE STACKLY
+         ========================================================================== -->
+    <section id="why-us" class="section section-alt" aria-label="Why Choose Stackly Travel">
+      <div class="container">
+
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            The Stackly Standard
+          </span>
+          <h2 class="section-title">Why Choose <span class="highlight">Stackly</span></h2>
+          <p class="section-subtitle">
+            We redefine global travel by blending unrivaled boutique property curation with strict price transparency and dedicated concierge excellence.
+          </p>
+        </header>
+
+        <div class="features-grid">
+
+          <!-- Feature 1 -->
+          <article class="feature-card" data-feature-index="0" tabindex="0">
+            <div class="feature-card-bg" aria-hidden="true">
+              <img src="assets/hotels/hotel-1.webp" alt="" class="feature-bg-img" loading="lazy" width="300" height="400">
+              <div class="feature-bg-overlay"></div>
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-icon-wrapper" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+                  <line x1="12" y1="6" x2="12" y2="8"></line>
+                  <line x1="12" y1="16" x2="12" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="feature-title">Best Price Guarantee</h3>
+              <p class="feature-desc">Direct hotel partnerships guarantee you secure the lowest authentic rates without surprise resort surcharges.</p>
+            </div>
+          </article>
+
+          <!-- Feature 2 -->
+          <article class="feature-card" data-feature-index="1" tabindex="0">
+            <div class="feature-card-bg" aria-hidden="true">
+              <img src="assets/hotels/hotel-4.webp" alt="" class="feature-bg-img" loading="lazy" width="300" height="400">
+              <div class="feature-bg-overlay"></div>
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-icon-wrapper" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Easy & Secure Booking</h3>
+              <p class="feature-desc">Bank-level 256-bit encryption and streamlined 2-step reservations ensure complete peace of mind.</p>
+            </div>
+          </article>
+
+          <!-- Feature 3 -->
+          <article class="feature-card" data-feature-index="2" tabindex="0">
+            <div class="feature-card-bg" aria-hidden="true">
+              <img src="assets/destinations/dubai.webp" alt="" class="feature-bg-img" loading="lazy" width="300" height="400">
+              <div class="feature-bg-overlay"></div>
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-icon-wrapper" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-title">24/7 Dedicated Support</h3>
+              <p class="feature-desc">Our multilingual luxury travel specialists are on standby via phone, chat, or WhatsApp around the clock.</p>
+            </div>
+          </article>
+
+          <!-- Feature 4 -->
+          <article class="feature-card" data-feature-index="3" tabindex="0">
+            <div class="feature-card-bg" aria-hidden="true">
+              <img src="assets/hotels/hotel-3.webp" alt="" class="feature-bg-img" loading="lazy" width="300" height="400">
+              <div class="feature-bg-overlay"></div>
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-icon-wrapper" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="feature-title">Handpicked Hotels</h3>
+              <p class="feature-desc">Every listing is individually vetted against 100+ criteria for architectural charm, cleanliness, and VIP service.</p>
+            </div>
+          </article>
+
+          <!-- Feature 5 -->
+          <article class="feature-card" data-feature-index="4" tabindex="0">
+            <div class="feature-card-bg" aria-hidden="true">
+              <img src="assets/experiences/beach.webp" alt="" class="feature-bg-img" loading="lazy" width="300" height="400">
+              <div class="feature-bg-overlay"></div>
+            </div>
+            <div class="feature-card-content">
+              <div class="feature-icon-wrapper" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 4 23 10 17 10"></polyline>
+                  <polyline points="1 20 1 14 7 14"></polyline>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Flexible Travel Options</h3>
+              <p class="feature-desc">Plans change effortlessly with generous free cancellation policies and instant date rescheduling.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: TRAVEL EXPERIENCES
+         ========================================================================== -->
+    <section id="experiences" class="section" aria-label="Curated Travel Experiences">
+      <div class="container">
+
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+            Curated Themes
+          </span>
+          <h2 class="section-title">Travel <span class="highlight">Experiences</span></h2>
+          <p class="section-subtitle">
+            Find the perfect journey crafted around your travel passion, whether craving turquoise coastlines or pristine mountain solitude.
+          </p>
+        </header>
+
+        <div class="experiences-grid">
+
+          <!-- Experience 1: Beach Holidays -->
+          <article class="experience-card" data-aos="fade-up" data-aos-delay="0" onclick="selectDestinationForBooking('Bali')">
+            <img src="assets/experiences/beach.webp" alt="Tropical Beach Holidays" class="experience-bg-img" loading="lazy" width="700" height="850">
+            <div class="experience-overlay"></div>
+            <div class="experience-content">
+              <span class="experience-subtitle">Sun & Coastline</span>
+              <h3 class="experience-title">Beach Holidays</h3>
+              <p class="experience-count">48 Coastal Resorts</p>
+              <span class="experience-link">
+                <span>Discover Coastlines</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Experience 2: Mountain Escapes -->
+          <article class="experience-card" data-aos="fade-up" data-aos-delay="100" onclick="selectDestinationForBooking('Swiss Alps')">
+            <img src="assets/experiences/mountains.webp" alt="Alpine Mountain Escapes" class="experience-bg-img" loading="lazy" width="700" height="850">
+            <div class="experience-overlay"></div>
+            <div class="experience-content">
+              <span class="experience-subtitle">Peaks & Valleys</span>
+              <h3 class="experience-title">Mountain Escapes</h3>
+              <p class="experience-count">32 Alpine Lodges</p>
+              <span class="experience-link">
+                <span>Explore Mountains</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Experience 3: City Adventures -->
+          <article class="experience-card" data-aos="fade-up" data-aos-delay="200" onclick="selectDestinationForBooking('Tokyo')">
+            <img src="assets/experiences/city.webp" alt="Cosmopolitan City Adventures" class="experience-bg-img" loading="lazy" width="700" height="850">
+            <div class="experience-overlay"></div>
+            <div class="experience-content">
+              <span class="experience-subtitle">Urban Vibrance</span>
+              <h3 class="experience-title">City Adventures</h3>
+              <p class="experience-count">64 Metropolis Hotels</p>
+              <span class="experience-link">
+                <span>Explore Cities</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <!-- Experience 4: Luxury Getaways -->
+          <article class="experience-card" data-aos="fade-up" data-aos-delay="300" onclick="selectDestinationForBooking('Santorini')">
+            <img src="assets/experiences/luxury.webp" alt="Ultra Luxury Private Getaways" class="experience-bg-img" loading="lazy" width="700" height="850">
+            <div class="experience-overlay"></div>
+            <div class="experience-content">
+              <span class="experience-subtitle">Opulence & Serenity</span>
+              <h3 class="experience-title">Luxury Getaways</h3>
+              <p class="experience-count">56 Private Sanctuaries</p>
+              <span class="experience-link">
+                <span>View Sanctuaries</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: CUSTOMER TESTIMONIALS SLIDER
+         ========================================================================== -->
+    <section id="testimonials" class="section section-alt" aria-label="Customer Testimonials">
+      <div class="container">
+
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            Verified Guest Reviews
+          </span>
+          <h2 class="section-title">Words from Our <span class="highlight">Travelers</span></h2>
+          <p class="section-subtitle">
+            Read real stories from discerning travelers who booked their most memorable worldwide holidays through Stackly.
+          </p>
+        </header>
+
+        <!-- Continuous Horizontal Live Marquee Wrapper -->
+        <div id="testimonials-slider-wrapper" class="testimonials-slider-wrapper" data-aos="fade-up">
+          <div id="testimonials-track" class="testimonials-track" aria-live="off">
+            <!-- Rendered dynamically by js/testimonials.js -->
+          </div>
+        </div>
+
+        <!-- Slider Controls: Reverse/Forward, Play/Pause & Dots -->
+        <div class="testimonials-controls-row" data-aos="fade-up">
+          <div class="slider-nav-controls">
+            <button type="button" id="testimonials-prev" class="btn-slider-arrow" aria-label="Reverse Stream Direction" title="Reverse Stream Direction">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button type="button" id="testimonials-play-pause" class="btn-slider-arrow btn-play-pause" aria-label="Pause / Resume Live Stream" title="Pause / Resume Stream">
+              <svg id="icon-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+                <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+              </svg>
+              <svg id="icon-play" class="hidden" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </button>
+            <div id="testimonials-dots" class="testimonials-dots" role="tablist" aria-label="Stream pacing indicators"></div>
+            <button type="button" id="testimonials-next" class="btn-slider-arrow" aria-label="Speed Up Stream" title="Forward / Speed Up Stream">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 9: NEWSLETTER SUBSCRIPTION
+         ========================================================================== -->
+    <section id="newsletter" class="section" aria-label="Newsletter Subscription">
+      <div class="container">
+        <div class="newsletter-banner" data-aos="zoom-in">
+          <div class="newsletter-content">
+            <span class="newsletter-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              VIP Member Club
+            </span>
+            <h2 class="newsletter-title">Get Secret Hotel Deals & $50 Voucher</h2>
+            <p class="newsletter-desc">
+              Subscribe to Stackly's weekly private travel journal. Receive handpicked luxury flash sales and an instant $50 welcome discount applied to your first booking.
+            </p>
+
+            <form id="newsletter-form" class="newsletter-form" novalidate>
+              <input 
+                type="email" 
+                id="newsletter-email" 
+                class="newsletter-input" 
+                placeholder="Enter your personal email address..." 
+                aria-label="Email address for travel newsletter"
+                required
+              >
+              <button type="submit" class="btn-newsletter-submit">
+                <span>Claim $50 Voucher</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+
+            <div id="newsletter-feedback" class="newsletter-feedback" role="alert"></div>
+
+            <div class="newsletter-trust-tags">
+              <span class="trust-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Zero spam guarantee
+              </span>
+              <span class="trust-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Unsubscribe anytime in 1 click
+              </span>
+              <span class="trust-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Instant voucher delivery
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 10: FOOTER
+       ========================================================================== -->
+  <footer id="footer" class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+
+        <!-- Col 1: About & Logo -->
+        <div class="footer-col-about">
+          <a href="#home" class="footer-logo-link" aria-label="Stackly Home">
+            <img src="assets/stackly_logo_01.webp" alt="Stackly Travel" class="footer-logo" width="129" height="56">
+          </a>
+          <p class="footer-desc">
+            Stackly is your premier portal for extraordinary worldwide sanctuaries. Curating world-class hotels, authentic local culture, and effortless booking experiences since 2024.
+          </p>
+          <div class="footer-social-links" aria-label="Social media profiles">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter / X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#destinations" class="footer-link">Destination</a></li>
+            <li><a href="#hotels" class="footer-link">Hotels</a></li>
+            <li><a href="#why-us" class="footer-link">About Us</a></li>
+            <li><a href="#testimonials" class="footer-link">Guest Reviews</a></li>
+            <li><a href="#footer" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular Destinations -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Top Destinations</h4>
+          <ul class="footer-links-list">
+            <li><a href="#destinations" class="footer-link" onclick="selectDestinationForBooking('Paris')">Paris, France</a></li>
+            <li><a href="#destinations" class="footer-link" onclick="selectDestinationForBooking('Bali')">Bali, Indonesia</a></li>
+            <li><a href="#destinations" class="footer-link" onclick="selectDestinationForBooking('Santorini')">Santorini, Greece</a></li>
+            <li><a href="#destinations" class="footer-link" onclick="selectDestinationForBooking('Tokyo')">Tokyo, Japan</a></li>
+            <li><a href="#destinations" class="footer-link" onclick="selectDestinationForBooking('Swiss Alps')">Swiss Alps, Switzerland</a></li>
+            <li><a href="#destinations" class="footer-link" onclick="selectDestinationForBooking('Dubai')">Dubai, UAE</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Information -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact & Support</h4>
+          <div class="footer-contact-list">
+            <div class="contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>MMR Complex, Chinna Thirupathi (Near Chinna Muniyappan Kovil), Salem, Tamil Nadu – 636008</span>
+            </div>
+            <div class="contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:+917010792745">+91 70107 92745</a>
+            </div>
+            <div class="contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:info@thestackly.com">info@thestackly.com</a>
+            </div>
+            <div class="contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Concierge Desk: 24/7/365 Worldwide</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Stackly Travel Inc. All rights reserved. Designed with precision for global explorers.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Preferences</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS & SLIDE-OVER DRAWERS
+       ========================================================================== -->
+
+  <!-- Hotel Details & Booking Price Estimator Modal -->
+  <div id="hotel-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-hotel-title">
+    <div class="modal-container">
+      <button type="button" class="btn-modal-close" onclick="closeHotelDetailsModal()" aria-label="Close Hotel Details Modal">&times;</button>
+      <div id="hotel-modal-body">
+        <!-- Rendered dynamically by openHotelDetailsModal() in js/hotels.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Booking Confirmation Modal -->
+  <div id="booking-confirm-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container confirm-modal-box">
+      <button type="button" class="btn-modal-close" onclick="closeConfirmModal()" aria-label="Close Confirmation Modal">&times;</button>
+      <div id="booking-confirm-body">
+        <!-- Rendered dynamically by executeDemoBooking() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Wishlist Slide-Over Drawer -->
+  <aside id="wishlist-drawer" class="wishlist-drawer" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="wishlist-drawer-header">
+      <div class="wishlist-header-title-box">
+        <h3 class="wishlist-drawer-title">Saved Properties</h3>
+        <span id="drawer-wishlist-count" class="drawer-wishlist-count">0 Saved Properties</span>
+      </div>
+      <button type="button" id="btn-close-wishlist" class="btn-close-drawer" aria-label="Close Wishlist Drawer">&times;</button>
+    </div>
+
+    <div id="wishlist-items-container" class="wishlist-drawer-body">
+      <!-- Populated dynamically via js/wishlist.js -->
+    </div>
+
+    <!-- Empty State for Wishlist -->
+    <div id="wishlist-empty-state" class="empty-state-box hidden" style="border:none; padding:40px 10px;">
+      <div class="empty-state-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+      </div>
+      <h4 class="empty-state-title">Your wishlist is empty</h4>
+      <p class="empty-state-text">Tap the heart icon on any hotel card to save properties for your upcoming journey.</p>
+    </div>
+
+    <div class="wishlist-drawer-footer">
+      <button type="button" id="btn-clear-wishlist" class="btn-clear-wishlist">Clear All Saved Properties</button>
+    </div>
+  </aside>
+  <div id="wishlist-drawer-overlay" class="mobile-nav-overlay"></div>
+
+  <!-- Authentication Modal (Sign In / Register) -->
+  <div id="auth-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container auth-modal-card">
+      <button type="button" id="btn-close-auth" class="btn-modal-close" aria-label="Close Login Modal">&times;</button>
+      
+      <div class="auth-header">
+        <h3 class="auth-title">Welcome to Stackly</h3>
+        <p class="auth-sub">Access your member rates, saved itineraries, and VIP booking perks.</p>
+      </div>
+
+      <div class="auth-tabs" role="tablist">
+        <button type="button" id="tab-auth-signin" class="auth-tab-btn active">Login</button>
+        <button type="button" id="tab-auth-signup" class="auth-tab-btn">Create Account</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="form-auth-signin" class="auth-form">
+        <div class="auth-field">
+          <label for="signin-email">Email Address</label>
+          <input type="email" id="signin-email" placeholder="name@example.com" required value="traveler@stackly.com">
+        </div>
+        <div class="auth-field">
+          <label for="signin-password">Password</label>
+          <input type="password" id="signin-password" placeholder="••••••••" required value="password123">
+        </div>
+        <button type="submit" class="btn-primary-block">
+          <span>Login to Stackly</span>
+        </button>
+      </form>
+
+      <!-- Sign Up Form -->
+      <form id="form-auth-signup" class="auth-form hidden">
+        <div class="auth-field">
+          <label for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" placeholder="Alexander Wright" required>
+        </div>
+        <div class="auth-field">
+          <label for="signup-email">Email Address</label>
+          <input type="email" id="signup-email" placeholder="name@example.com" required>
+        </div>
+        <div class="auth-field">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" placeholder="Create a strong password" required>
+        </div>
+        <button type="submit" class="btn-primary-block">
+          <span>Create Free Account</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- ==========================================================================
+       JAVASCRIPT SCRIPTS
+       ========================================================================== -->
+  <!-- Lenis Modern Smooth Scroll Library -->
+  <script src="js/lenis.min.js"></script>
+
+  <!-- Local AOS Library -->
+  <script src="js/aos.js"></script>
+
+  <!-- Modular Application Scripts -->
+  <script src="js/destinations.js"></script>
+  <script src="js/hotels.js"></script>
+  <script src="js/wishlist.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/testimonials.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+
